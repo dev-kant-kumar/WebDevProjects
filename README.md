@@ -66,4 +66,4 @@ Once your pull request is reviewed and accepted, your contributions will be merg
 This project is licensed under the [MIT License](LICENSE), which means you are free to use, modify, and distribute the code as long as you include the appropriate attribution and adhere to the terms of the license.
 
 Happy coding!
-```
+
