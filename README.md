@@ -67,5 +67,3 @@ This project is licensed under the [MIT License](LICENSE), which means you are f
 
 Happy coding!
 ```
-
-Replace `project-name` in the "Getting Started" section with the actual project names you have in your repository. This template provides a starting point for your README, and you can enhance it further with specific project details, screenshots, and more as your repository grows.
