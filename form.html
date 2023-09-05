@@ -13,17 +13,15 @@
         padding: 50px;
         margin: 20px;
         font-family: "Times New Roman", Times, serif;
-        
         }
        
-
-
     </style>
 </head>
 <body>
     
     <form action="backend.php" method="get" target="_blank" id="sigup">
         <h3>Sign Up</h3>
+        <!-- form main session -->
         <label for="pic">Picture</label>
         <input type="file" name="pic" id="pic"><br>
         <label for="name">Name </label>
@@ -41,6 +39,7 @@
          <label for="password">Confirm Password</label>
          <input type="password" name="password" id="password" placeholder="Re-enter Your Password" required><br>
          <label for="platform">How do you know about us</label>
+        <!-- Ask users how they know our website -->
          <select name="platform" id="platform">
             <option value="select" selected>Select</option>
             <option value="Facebookads">Facebook Ads</option>
@@ -48,16 +47,11 @@
             <option value="YouTubeads">YouTube Ads</option>
             <option value="website"> Website</option>
             <option value="other">Others</option><br>
-       
-         
          </select><br>
+        <!-- Buttons and Checkbox -->
          <input type="checkbox"> Accept Terms and Conditions <br><br>
          <input type="submit" value="Submit">
          <input type="reset" value="Reset">
-
-
-
-
     </form>
 </body>
 </html>
