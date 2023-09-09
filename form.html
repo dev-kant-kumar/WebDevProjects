@@ -4,27 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <form action="backend.php" method="get" target="_blank" id="sigup">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ <form action="backend.php" method="get" target="_blank" id="signup">
         <h3>Sign Up</h3>
         <!-- form main session -->
-        <label for="pic">Picture</label>
-        <input type="file" name="pic" id="pic"><br>
-        <label for="name">Name </label>
-        <input type="text" name="name" id="name" placeholder="Enter Your Name" required><br>
+       
+       
+        <label for="name">Name</label>
+         <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+
          <label for="email">Email</label>
-         <input type="email" name="email" id="email" placeholder="Enter Valid Email" required><br>
+          <input type="email" name="email" id="email" placeholder="Enter Valid Email" required>
+
          <label for="phone">Phone</label>
-         <input type="number" name="number" id="phone" placeholder="Enter Your Phone No" required><br>
-         <label for="gender">Gender</label>
-         Male<input type="radio" name="gender" id="gender" checked> Female <input type="radio" name="gender" id="gender"><br>
+          <input type="tel" name="number" id="phone" placeholder="Enter Your Phone No" required>
+
+         <label for="gender">Gender</label> 
+          <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+
          <label for="dob">Date of Birth</label>
-         <input type="date" name="dob" id="dob"><br>
+          <input type="date" name="dob" id="dob" selected>
+
          <label for="password">Password</label>
-         <input type="password" name="password" id="password" placeholder="Enter Your Password" required><br>
+          <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
+
          <label for="password">Confirm Password</label>
-         <input type="password" name="password" id="password" placeholder="Re-enter Your Password" required><br>
+          <input type="password" name="password" id="password" placeholder="Re-enter Your Password" required>
+
          <label for="platform">How do you know about us</label>
         <!-- Ask users how they know our website -->
          <select name="platform" id="platform">
@@ -34,11 +58,18 @@
             <option value="YouTubeads">YouTube Ads</option>
             <option value="website"> Website</option>
             <option value="other">Others</option><br>
-         </select><br>
+         </select>
+
         <!-- Buttons and Checkbox -->
-         <input type="checkbox"> Accept Terms and Conditions <br><br>
-         <input type="submit" value="Submit">
-         <input type="reset" value="Reset">
+         <input type="checkbox"> Accept Terms and Conditions
+         <input type="submit" value="Sign Up For Free" class="button">
+        
+         
+         <h3><center>OR</center></h3>
+         <input type="button" value="Continue With Google" class="button">
+         <input type="button" value="Continue With Facebook" class="button">
+         <input type="button" value="Continue With Twitter" Class="button">
     </form>
+    
 </body>
 </html>
