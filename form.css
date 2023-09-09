@@ -10,20 +10,7 @@ div
     background-color:grey;
     border-radius:5px;
     padding:20px;
-
 }
-
-
-
-
-
-
-
-
-    
-    
-  
-
 .button{
     height:30px;
     width:200px;
@@ -44,17 +31,12 @@ input{
     display:inline-block;
     border:2px solid lightgrey;
     border-radius:6px;
-    
-
-
-
-}
+   }
 label{
     color: black;
     margin:5px;
     position:relative;
-    
-}
+    }
 select{
     height:40px;
     width:250px;
