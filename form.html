@@ -19,11 +19,13 @@
 
 
 
-  
- <form action="backend.php" method="get" target="_blank" id="signup">
+ 
+  <form action="https://formspree.io/email" method="post" target="_blank" id="signup">
+
         <h3>Sign Up</h3>
-        <!-- form main session -->
-       
+
+        
+       <!--Main session of form-->
        
         <label for="name">Name</label>
          <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
@@ -50,7 +52,7 @@
           <input type="password" name="password" id="password" placeholder="Re-enter Your Password" required>
 
          <label for="platform">How do you know about us</label>
-        <!-- Ask users how they know our website -->
+
          <select name="platform" id="platform">
             <option value="select" selected>Select</option>
             <option value="Facebookads">Facebook Ads</option>
@@ -61,15 +63,21 @@
          </select>
 
         <!-- Buttons and Checkbox -->
-         <input type="checkbox"> Accept Terms and Conditions
+
+         <input type="checkbox" id="t&c">
+         <label for="t&c">Agree Terms And Conditions</label>
          <input type="submit" value="Sign Up For Free" class="button">
         
+         <!-- Other SignUp Options -->
+
+         <h3>OR</h3>
          
-         <h3><center>OR</center></h3>
          <input type="button" value="Continue With Google" class="button">
          <input type="button" value="Continue With Facebook" class="button">
          <input type="button" value="Continue With Twitter" Class="button">
-    </form>
+         
+     </form>
+    
     
 </body>
 </html>
