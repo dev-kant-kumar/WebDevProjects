@@ -1,6 +1,6 @@
 /* CSS for forms */
 
-#signup{
+#signup ,#login{
 
     background-color:lightgray;
     border-radius:10px;
