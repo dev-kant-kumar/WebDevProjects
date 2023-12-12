@@ -1,0 +1,17 @@
+body{
+    background-color:lightblue;
+}
+nav
+ {
+    width:100%;
+ }
+ul{
+    list-style-type:none;
+    display:inline-flex;
+li{
+    margin-right:50px;
+}    
+}
+a{
+    text-decoration: none;
+}

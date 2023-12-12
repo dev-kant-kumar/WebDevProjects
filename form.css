@@ -1,5 +1,6 @@
 /* CSS for forms */
 
+
 #signup ,#login{
 
     background-color:lightgray;
@@ -44,7 +45,10 @@ select{
 
 
 h3{
-    margin-left:380px;
+    display: flex;
+    justify-content: center;
+
+    /* margin-left:380px; */
 }
 
 
