@@ -4,79 +4,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables in html</title>
+    <style>
+        ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            background-color:#333;
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+        }
+        li{
+            float:left;
+        }
+        a{
+            text-decoration:none;
+            display: block;
+            padding:10px;
+            color:white;
+            text-align: center;
+        }
+        li a:hover{
+            background-color: black;
+            
+        }
+       footer{
+        background-color:lightgray;
+        width:100%;
+        position:fixed;
+        bottom:0;
+        left:0;
+        padding:50px;
+
+       } 
+      footer table{
+        border-spacing:15px;
+      } 
+      footer table td a{
+        color:black;
+      }s
+      img{
+        position:fixed;
+        margin-right:1px;
+      }
+
+        
+    </style>
 </head>
 <body>
-    <center>
-    <h1>Vinoba Bhave University, Hazaribagh</h1>
-    <h2>UNIVERSITY DEPARTMENT OF COMPUTER APPLICATIONS</h2>
-    <h3>Syllabus</h3>
-    <h4>(BCA, Semester-I)</h4>
-    </center>
-    <center>
-    <table>
-        <thead> 
-            <tr>
-                <th>Paper Code</th>
-                <th>Title </th>
-                <th> Credit </th>
-                <th>Marks</th>
-            </tr>
-            
-        </thead>
-        <tbody>
-            <tr>
-                <td>BCA F1001</td>
-                <td>Business Communication</td>
-                <td> 4 </td>
-                <td>100</td>
-                
-            </tr>
-            <tr>
-                <td>BCA F1002</td>
-                <td>Basic Mathematics-I</td>
-                <td>5</td>
-                <td>100</td>
-            </tr>
-            <tr>
-                <td>BCA F1003</td>
-                <td>Business Practice and Management</td>
-                <td>4</td>
-                <td>100</td>
-            </tr>
-            <tr>
-                <td>BCA C1004</td>
-                <td>Introduction to Computer Science</td>
-                <td>4</td>
-                <td>100</td>
-            </tr>
-            <tr>
-                <td>BCA C1005</td>
-                <td>Problem Solving and Programming in C</td>
-                <td>5</td>
-                <td>100</td>
-            </tr>
-            <tr>
-                <td>BCA P1006</td>
-                <td>Computer Basic and PC Software Lab</td>
-                <td>1</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>BCA P1007</td>
-                <td>C Programming Lab</td>
-                <td>1</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>BCA P1008</td>
-                <td>Communication Skill Lab</td>
-                <td>1</td>
-                <td>50</td>
-            </tr>
-        </tbody>
+ <header>
+    <nav>
+        <ul>
+            <li><a href="#">Papers
+              <select>
+                  <option value=""><a href="#">Business Communication</a></option>
+                  <option value=""><a href="#">Business Prcatice and Management</a></option>
+                  <option value=""><a href="#">Basic Mathematics-I</a></option>
+                  <option value=""><a href="#">Introduction to Computer Science</a></option>
+                  <option value=""><a href="#">Problem Solving And programming in C</a></option>
+              </select>
+          </a></li>
+            <li><a href="#">Exams
+                <select name="exams" id="exams">
+                    <option value=""><a href="#">Semester I</a></option>
+                    <option value=""><a href="#">Semester II</a></option>
+                    <option value=""><a href="#">Semester III</a></option>
+                    <option value=""><a href="#">Semester IV</a></option>
+                    <option value=""><a href="#">Semester V</a></option>
+                    <option value=""><a href="#">Semester VI</a></option>
+                </select>
+            </a></li>
 
+            <li><a href="#">Resoucres
+                <select name="" id="">
+                    <option value=""><a href="#">Books</a></option>
+                    <option value=""><a href="#">Notes</a></option>
+                    <option value=""><a href="#">Sample Papers</a></option>
+                    <option value=""><a href="#">PYQs</a></option>
+                </select>
+            </a></li>
+            <li><a href="#">Result
+                <select name="exams" id="exams">
+                    <option value=""><a href="#">Semester I</a></option>
+                    <option value=""><a href="#">Semester II</a></option>
+                    <option value=""><a href="#">Semester III</a></option>
+                    <option value=""><a href="#">Semester IV</a></option>
+                    <option value=""><a href="#">Semester V</a></option>
+                    <option value=""><a href="#">Semester VI</a></option>
+                </select>
+            </a></li>
+            <li><a href="#">Account
+                <select name="" id="">
+                    <option value=""><a href="#">Profile Setting</a></option>
+                    <option value=""><a href="#">Privacy Setting</a></option>
+                    <option value=""><a href="#">Dashbord</a></option>
+                    <option value=""><a href="#">Log Out</a></option>
+                </select>
+            </a></li>
+            <li><a href=""><img src="/vbulogo.jpeg" alt="vbu logo" height="25px"></a></li>
+        </ul>
+    </nav>
+ </header>   
+ <main>
+     <center>
+        <br><br>
+       <h1>Vinoba Bhave University, Hazaribagh</h1>
+       <h2>UNIVERSITY DEPARTMENT OF COMPUTER APPLICATIONS</h2>
+       <h3>Syllabus</h3>
+       <h4>(BCA, Semester-I)</h4>
+     </center>
+     <center>
+         <table cellspacing="15">
+             <thead> 
+                 <tr>
+                     <th>Paper Code</th>
+                     <th>Title </th>
+                     <th> Credit </th>
+                     <th>Marks</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td>BCA F1001</td>
+                     <td>Business Communication</td>
+                     <td> 4 </td>
+                     <td>100</td>
+                     
+                 </tr>
+                 <tr>
+                     <td>BCA F1002</td>
+                     <td>Basic Mathematics-I</td>
+                     <td>5</td>
+                     <td>100</td>
+                 </tr>
+                 <tr>
+                     <td>BCA F1003</td>
+                     <td>Business Practice and Management</td>
+                     <td>4</td>
+                     <td>100</td>
+                 </tr>
+                 <tr>
+                     <td>BCA C1004</td>
+                     <td>Introduction to Computer Science</td>
+                     <td>4</td>
+                     <td>100</td>
+                 </tr>
+                 <tr>
+                     <td>BCA C1005</td>
+                     <td>Problem Solving and Programming in C</td>
+                     <td>5</td>
+                     <td>100</td>
+                 </tr>
+                 <tr>
+                     <td>BCA P1006</td>
+                     <td>Computer Basic and PC Software Lab</td>
+                     <td>1</td>
+                     <td>50</td>
+                 </tr>
+                 <tr>
+                     <td>BCA P1007</td>
+                     <td>C Programming Lab</td>
+                     <td>1</td>
+                     <td>50</td>
+                 </tr>
+                 <tr>
+                     <td>BCA P1008</td>
+                     <td>Communication Skill Lab</td>
+                     <td>1</td>
+                     <td>50</td>
+                 </tr>
+             </tbody>
+         </table>
+     </center>
+ </main>
+ <footer>
+    <div>
+        <table>
+            <thead >
+                <tr>
+                    
+                    <th><a href="#">Contact Us</a></th>
+                    <th><a href="#">Gallery</a></th>
+                    <th><a href="#">Courses</a></th>
+                    <th><a href="#">Admin Portal</a></th>
+                    <th><a href="#">Network</a></th>
+                    <th><a href="#">Campus Info</a></th>
+                </tr>
 
-    </table>
-    </center>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Call at : 91-0123456789</a></td>
+                    <td><a href="#">Photo Gallery</a></td>
+                    <td><a href="#">BCA</a></td>
+                    <td><a href="#">University Poratl</a></td>
+                    <td><a href="#">Professors</a></td>
+                    <td><a href="#">MCA Department Campus</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Mail at : contact@bca.vbu</a></td>
+                    <td><a href="#">Video Gallery</a></td>
+                    <td><a href="#">MCA</a></td>
+                    <td><a href="#"> MCA Department Portal</a></td>
+                    <td><a href="#">Students</a></td>
+                    <td><a href="#">Full University Campus</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <!-- <p>All rights are reserved.</p> -->
+ </footer>
 </body>
 </html>
